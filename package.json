@@ -1,7 +1,6 @@
 {
   "name": "@civ-clone/library-government",
-  "version": "0.1.0",
-  "main": "index.js",
+  "version": "0.1.1",
   "repository": "git@github.com:civ-clone/library-government.git",
   "keywords": [
     "typescript",
@@ -13,8 +12,6 @@
     "build": "npm run ts:compile && npm run prettier:format",
     "prettier:check": "prettier --config .prettierrc '**/*.ts'",
     "prettier:format": "prettier --config .prettierrc '**/*.ts' --write",
-    "test": "ts-mocha ./tests/*.test.ts",
-    "test:coverage": "c8 ts-mocha ./tests/*.test.ts",
     "ts:compile": "tsc --build tsconfig.json"
   },
   "devDependencies": {
@@ -36,6 +33,7 @@
     "@civ-clone/base-government-democracy": "^0.1.0",
     "@civ-clone/base-government-despotism": "^0.1.0",
     "@civ-clone/base-government-monarchy": "^0.1.0",
-    "@civ-clone/base-government-republic": "^0.1.0"
+    "@civ-clone/base-government-republic": "^0.1.0",
+    "@civ-clone/base-player-action-revolution": "^0.1.1"
   }
 }
