@@ -10,8 +10,9 @@
   "license": "MIT",
   "scripts": {
     "build": "npm run ts:compile && npm run prettier:format",
-    "prettier:check": "prettier --config .prettierrc '**/*.ts'",
+    "prettier:check": "prettier --config .prettierrc --check '**/*.ts'",
     "prettier:format": "prettier --config .prettierrc '**/*.ts' --write",
+    "test": "ts-mocha ./tests/*.test.ts",
     "ts:compile": "tsc --build tsconfig.json"
   },
   "devDependencies": {
@@ -34,6 +35,7 @@
     "@civ-clone/base-government-despotism": "^0.1.0",
     "@civ-clone/base-government-monarchy": "^0.1.0",
     "@civ-clone/base-government-republic": "^0.1.0",
+    "@civ-clone/base-player-action-choose-government": "^0.1.0",
     "@civ-clone/base-player-action-revolution": "^0.1.1"
   }
 }
